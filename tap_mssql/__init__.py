@@ -63,18 +63,20 @@ STRING_TYPES = set(
     ]
 )
 
+#changed real to FLOAT TYPE and removed support for timestamp
+
 BYTES_FOR_INTEGER_TYPE = {
     "tinyint": 1,
     "smallint": 2,
     "mediumint": 3,
     "int": 4,
-    "real": 4,
+#    "real": 4,
     "bigint": 8,
 }
 
-FLOAT_TYPES = set(["float", "double", "money"])
+FLOAT_TYPES = set(["float", "double", "real",  "money"])
 
-DATETIME_TYPES = set(["datetime", "timestamp", "date", "time", "smalldatetime"])
+DATETIME_TYPES = set(["datetime", "date", "time", "smalldatetime"])
 
 VARIANT_TYPES = set(["json"])
 
